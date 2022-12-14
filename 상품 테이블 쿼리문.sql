@@ -55,7 +55,7 @@ CREATE TABLE `km_product` (
 `etc4` INT default NULL, 
 `etc5` INT default NULL);
 INSERT INTO `km_product`(`prodCate1`,`prodCate2`,`prodName`,`descript`,`company`,`seller`,`price`,`discount`,`point`,`sold`,`delivery`,`thumb1`,`thumb2`,`thumb3`,`detail`,`status`,`duty`,`receipt`,`bizType`,`origin`,`ip`, `rdate`) 
-VALUES(10,12,'배송비 테스트','따뜻합니다 좋아요','그린컴','김현준',10000,10,0,10,1000,'경로1','경로2','경로3','상세설명','새상품','과세상품','발행가능','사업자','상세설명', '192.168', '2022-12-13 11:49:11');
+VALUES(10,10,'높은 가격순  테스트','따뜻합니다 좋아요','그린컴','김현준',20000,10,0,10,1000,'경로1','경로2','경로3','상세설명','새상품','과세상품','발행가능','사업자','상세설명', '192.168', NOW());
 ALTER TABLE `km_product` AUTO_INCREMENT = 1000000;
 
 /* km_product 끝*/
