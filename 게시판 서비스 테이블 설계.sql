@@ -54,5 +54,3 @@ CREATE TABLE `board_file` (
 	`download`	INT DEFAULT 0,
 	`rdate`		DATETIME
 );user1
-
-customercustomercustomer
