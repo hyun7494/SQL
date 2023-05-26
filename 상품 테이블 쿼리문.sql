@@ -73,7 +73,8 @@ CREATE TABLE `km_product_cart` (
 `delivery` INT NOT NULL, 
 `total` INT NOT NULL, 
 `rdate` DATETIME NOT NULL);
-
+INSERT INTO `km_product_cart` (`uid`,`prodNo`,`count`,`price`,`discount`,`point`,`delivery`,`total`,`rdate`) 
+VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?);
 /* km_product_cart 끝*/
 
 
@@ -126,5 +127,18 @@ CREATE TABLE `km_product_review` (
 `rating` TINYINT NOT NULL, 
 `regip` VARCHAR(100) NOT NULL, 
 `rdate` DATETIME NOT NULL);
-
+INSERT INTO `km_product_review` (`prodNo`,`content`,`uid`,`rating`,`regip`,`rdate`) VALUES (1000000, '더미 리뷰', 'eeeeee', 3, '192.168', NOW());
 /* km_product_review 끝 */
+
+/* km_product_cate1 시작*/
+CREATE TABLE `km_product_cate1`(
+`cate1` INT NOT NULL PRIMARY KEY,
+`c1Name` VARCHAR(20) NOT NULL);
+/* km_product_cate1 끝*/km_member
+
+/* km_product_cate2 시작*/
+CREATE TABLE `km_product_cate2`(
+`cate1` INT NOT NULL,
+`cate2` INT NOT NULL,
+`c2Name` VARCHAR(20) NOT NULL);
+/* km_product_cate2 끝*/
